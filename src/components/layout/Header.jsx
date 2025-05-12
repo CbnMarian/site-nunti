@@ -33,7 +33,7 @@ export default function Header() {
                 <li key={item}>
                   <Link
                     href={`/#${item.toLowerCase()}`}
-                    className="font-medium text-gray-700 hover:text-olive-600 transition-colors"
+                    className="font-medium text-black hover:text-black/70 transition-colors"
                   >
                     {item}
                   </Link>
@@ -62,7 +62,7 @@ export default function Header() {
 
         <Link
           href="/#contact"
-          className="hidden md:block bg-olive-700 hover:bg-olive-800 text-white px-6 py-2 rounded-full transition-colors font-medium"
+          className="hidden md:block bg-white hover:bg-gray-100 text-black px-6 py-2 rounded-full transition-colors font-medium"
         >
           Contactează-ne
         </Link>

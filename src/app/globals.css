@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #59682d; /* olive-700 - un verde oliv pentru fundal */
+  --foreground: #000000; /* negru pentru text */
 }
 
 @theme inline {
@@ -14,11 +14,29 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #59682d; /* menține olive și pentru dark mode */
+    --foreground: #000000; /* menține negru și pentru dark mode */
   }
 }
+
 body {
-  background-color: #fefdf7; /* cream-50 */
-  color: #3c4525; /* olive-900 */
+  background-color: var(--background);
+  color: var(--foreground);
 }
+
+/* Asigurăm că toate textele sunt negre implicit */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+span,
+a,
+button,
+li {
+  color: black;
+}
+
+/* Excepții specifice pot fi create cu clase tailwind */
