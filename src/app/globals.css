@@ -14,7 +14,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #59682d; /* menține olive și pentru dark mode */
+    --background: #eff1e6; /* menține olive și pentru dark mode */
     --foreground: #000000; /* menține negru și pentru dark mode */
   }
 }
